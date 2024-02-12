@@ -1,0 +1,48 @@
+
+`timescale 1ns / 1ps
+
+module rotabit_testbench;
+
+    // Inputs
+    reg clk;
+    reg rst;
+
+    // Outputs
+    wire [15:0] x;
+
+    // Instantiate the DUT
+    rotabit dut (
+        .clk(clk),
+        .rst(rst),
+        .x(x)
+    );
+
+    // Clock generation
+    always #5 clk = ~clk;
+
+    // Reset generation
+    initial begin
+        rst = 1;
+        #10 rst = 0;
+    end
+
+    // Stimulus
+    integer i;
+    initial begin
+        #100;
+        for (i = 0; i < 16; i = i + 1) begin
+            #100 x = {x[14:0], x[15]};
+        end
+        #100 $finish;
+    end
+
+    // Dump simulation data to VCD file
+    initial begin
+        $dumpfile("dump.vcd");
+        $dumpvars(0, rotabit_testbench);
+        #10;
+        $finish;
+    end
+
+endmodule
+

@@ -1,0 +1,13 @@
+C:/Users/Equipo/Documents/verilog/sumador_serial/sumador_serie.v {0 {vlog -work work -vopt -stats=none {C:\Users\Equipo\Documents\verilog\sumador_serial\sumador_serie.v}
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling module serial_adder
+** Error: C:\Users\Equipo\Documents\verilog\sumador_serial\sumador_serie.v(17): Register is illegal in left-hand side of continuous assignment
+
+} {4.0 5.0} {}} C:/Users/Equipo/Documents/verilog/sumador_serial/tb_sumador_serie.v {1 {vlog -work work -vopt -stats=none {C:\Users\Equipo\Documents\verilog\sumador_serial\tb_sumador_serie.v}
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling module tb_sumador_serie
+
+Top level modules:
+	tb_sumador_serie
+
+} {} {}}

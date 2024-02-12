@@ -1,0 +1,33 @@
+module sumador_s (a, b, cin, s, cout);
+  input [7:0] a, b;
+  input cin;
+  output [7:0] s;
+  output cout;
+
+  wire [7:0] a_shift, b_shift;
+  wire [8:0] cout_inter; // Declare cout_inter as a wire with 9 bits
+  
+  assign a_shift = {1'b0, a}; // Shift de un bit para alinear las entradas
+  assign b_shift = {1'b0, b};
+
+  wire [8:0] cin_inter; // Declare cin_inter as a wire with 9 bits
+  assign cin_inter[0] = cin; // Assign the input cin to cin_inter[0]
+
+  genvar i;
+  generate // Inicio de la región generada
+    for (i = 0; i < 8; i = i + 1) begin : sumador
+      full_adder fa(
+        .a(a_shift[i]), 
+        .b(b_shift[i]), 
+        .cin(cin_inter[i]), // Use cin_inter[i] as input for the full_adder
+        .s(s[i]),
+        .cout(cout_inter[i]) // Use cout_inter[i] instead of cout_inter[i+1]
+      );
+
+      assign cin_inter[i+1] = cout_inter[i]; // Assign the carry output of the full_adder to cin_inter[i+1]
+    end
+  endgenerate // Fin de la región generada
+
+  assign cout = cout_inter[8]; // El bit de acarreo de salida es el último bit de cout_inter
+endmodule
+

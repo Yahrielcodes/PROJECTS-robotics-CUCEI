@@ -1,0 +1,127 @@
+$date
+	Wed Apr 26 06:49:02 2023
+$end
+$version
+	QuestaSim Version 10.6c
+$end
+$timescale
+	1ns
+$end
+
+$scope module rotabit_testbench $end
+$var reg 1 ! clk $end
+$var reg 1 " rst $end
+$var wire 1 # x [15] $end
+$var wire 1 $ x [14] $end
+$var wire 1 % x [13] $end
+$var wire 1 & x [12] $end
+$var wire 1 ' x [11] $end
+$var wire 1 ( x [10] $end
+$var wire 1 ) x [9] $end
+$var wire 1 * x [8] $end
+$var wire 1 + x [7] $end
+$var wire 1 , x [6] $end
+$var wire 1 - x [5] $end
+$var wire 1 . x [4] $end
+$var wire 1 / x [3] $end
+$var wire 1 0 x [2] $end
+$var wire 1 1 x [1] $end
+$var wire 1 2 x [0] $end
+
+$scope module dut $end
+$var wire 1 3 clk $end
+$var wire 1 4 rst $end
+$var reg 16 5 x [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+x"
+bx 5
+x2
+x1
+x0
+x/
+x.
+x-
+x,
+x+
+x*
+x)
+x(
+x'
+x&
+x%
+x$
+x#
+x4
+03
+$end
+#5
+1!
+13
+#10
+0!
+03
+#15
+1!
+13
+#20
+0!
+03
+#25
+1!
+13
+#30
+0!
+03
+#35
+1!
+13
+#40
+0!
+03
+#45
+1!
+13
+#50
+0!
+1!
+#55
+0!
+03
+#60
+1!
+13
+#65
+0!
+03
+#70
+1!
+13
+#75
+0!
+03
+#80
+1!
+13
+#85
+0!
+03
+#90
+1!
+13
+#95
+0!
+03
+#100
+1!
+0!
+#105
+1!
+13
+#110
+0!
+03
