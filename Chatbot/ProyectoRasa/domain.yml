@@ -1,0 +1,328 @@
+version: "3.1"
+intents:
+  - saludos
+  - goodbye
+  - affirm
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - necesidad_general
+  - Auto_Camionet
+  - uso
+  - presupuesto
+  - rendimientoGASOLINA
+  - agradecimiento
+  - Marca
+  - afirmar
+  - Auto_A
+  - negar
+#  - utter_responder_denada
+  - presupuesto_pobre
+#  - generalon_Tipo
+#  - generalon_TipoA1
+#  - generalon_TipoB
+#  - generalon_TipoC
+#  - generalon_TipoD
+#  - generalon_TipoE
+  - preguntas_1
+  - preguntas_2
+  - preguntas_3
+  - preguntas_4
+  - preguntas_5
+  - preguntas_6
+  - preguntas_7
+  - preguntas_8
+  - preguntas_9
+  - preguntas_10
+  - preguntas_11
+  - preguntas_12
+  - preguntas_13
+  - preguntas_14
+  - preguntas_15
+  - preguntas_16
+  - preguntas_17
+  - preguntas_18
+  - preguntas_19
+  - preguntas_20
+  - preguntas_21
+  - preguntas_22
+  - preguntas_23
+  - preguntas_24
+  - preguntas_25
+  - preguntas_26
+  - preguntas_27
+  - preguntas_28
+  - preguntas_29
+  - preguntas_30
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+entities:
+    - tipo_de_camioneta
+    - tipo_de_Auto
+    - tipo_de_uso
+    - GAMA
+
+
+responses:
+  utter_saludos:
+  - text: "Hola soy carribotin ,mi objetivo es informarte de una manera general sobre que automovil podrías
+          comprar de acuerdo a tus necesidades
+          tienes una duda en especifico o te damos una recomendacion general"
+  utter_generalon_Tipo:
+  - text: " excelente,¿te gustan los autos o las camionetas?"
+  utter_generalon_TipoA_A:
+  - text: "los autos son más faciles de estacionar buena eleccion, el auto donde lo usaras frecuentemente en la en la ciudad o en carretera"
+  utter_generalon_TipoA_C:
+  - text: "las camionetas pueden llevar a más personas,la camioneta donde lo usaras frecuentemente en las montañas ,en la ciudad o en carretera"
+  utter_generalon_TipoB:
+  - text: "muy bien , ahora dime de que gama te interesa
+             GAMA ALTA MAYOR A 500,000 PESOS
+             GAMA MEDIA ENTRE  150,000 PESOS A 500,000 PESOS
+             GAMA BAJA MENOR DE 150,000 PESOS"
+  utter_generalon_TipoC:
+  - text: "otra pregunta esencial es que tanto te importa si gasta mucha gasolina"
+  utter_generalon_TipoD:
+  - text: "bueno respeto tu opcion ,que marca es de tu preferencia"
+  utter_generalon_TipoE_A:
+  - text: "buena eleccion de marca,oye quisieras ver el catalago personalizado de autos que hicimos para ti?"
+  utter_generalon_TipoE_C:
+  - text: "cool esa marca es mi favorita por cierto ,te gustaria ver el catalago personalizado de camionetas que hicimos para ti?"
+  utter_responder_denada:
+  - text: "un gusto estoy para servirte"
+  utter_responder_negar_catalago:
+  - text: "Bueno era un buen catalago para tu proxima compra de todos modos te deseo suerte en tu busqueda amigo"
+
+  #respuesta_preguntas
+  utter_respuesta_a_pregunta1:
+    - text: "el auto cuenta con dos bolsas de aire, una para el piloto ubicada en el volante y otra para el copiloto en la parte del tablero;
+ambas son de uso único, después si ocurre un accidente deben ser reemplazadas."
+  utter_respuesta_a_pregunta2:
+    - text: "se manejan dos servicios, el primero a los 5,000 km, en este se revisan varios puntos del auto: cambio de aceite y filtro,
+limpieza del filtro de aire, de gasolina y las bujías, revisión de luces, ajuste de tiempo de encendido, revisión de cluth,
+borner, nivelar la batería, revisar el tren delantero. El segundo se realiza a los 10,000 km, donde se revisa: cambio de bujías,
+cambio de aceite y filtro, cambio de filtro de gasolina y aire, cambio de refrigerante, cambio de la faja del alternador,
+ajuste del tiempo de encendido, revisión de luces y faros, ajuste de clutch, revisión de los niveles de la caja, batería e
+hidráulico, limpieza de terminales de batería, revisión de los frenos y tren delantero. "
+  utter_respuesta_a_pregunta3:
+    - text: "Se recomienda cambiarlo a los 15.000 km o 20.000 km, recomendamos que no pase de los 30.000 km sin cambiar el aceite."
+  utter_respuesta_a_pregunta4:
+    - text: "manejamos distintos planes de seguro, la cobertura básica cubre: responsabilidad civil a terceros en sus bienes y
+personas, gastos médicos a los ocupantes del vehículo, defensa legal y fianza además de servicio de asistencia. La cobertura
+básica estandarizada protege con daños a terceros(responsabilidad civil por daños en bienes y personas) hasta por
+$250,000."
+  utter_respuesta_a_pregunta5:
+    - text: "si, pero recomendamos ampliamente que no lo haga a excepción de que vaya a derrapar intencionalmente con su vehículo;
+el control de tracción debe estar activado siempre cuando se conduzca sobre una superficie mojada o resbaladiza, evita
+que las ruedas patinen al acelerar en una carretera seca con mucha rápidez, evitando la perdia de control del vehículo
+que se puede generar dados los caballos de fuerza que posea el vehículo. El control de tracción actúa con el fin de
+reducir el par de giro y así recuperar la adherencia entre neumático y suelo."
+  utter_respuesta_a_pregunta6:
+    - text: "el rendimiento promedio es de 10 a 12 km por cada litro de combustible; es normal que este parámetro disminuya
+con el paso del tiempo dada la antiguedad del vehiculo. "
+  utter_respuesta_a_pregunta7:
+    - text: "por mal uso del vehículo, omisión de los servicios que provee la consecionaria o fuera de talleres autorizados,
+uso de piezas de origen distinto al de la marca(balatas, batería, rines,etc) y modificaciones(ruedas nuevas, wraps, etc)."
+  utter_respuesta_a_pregunta8:
+    - text: "reduce la resistencia del aire, este se desvía por las distintas partes del auto para que este pueda avanzar más
+facilmente; aumentan la fuerza con la que el vehículo se apoya contra la carretera, dando más estabilidad al pasar por
+las curvas a gran velocidad."
+  utter_respuesta_a_pregunta9:
+    - text: "son más seguros, cuando el rin recibe un impacto fuerte, el tejido se separa dejando aberturas para permitir una
+pérdida gradual de aire en lugar de una perdida instantánea como sucede como un rin de aluminio; otorgan agilidad en la
+dirección, logran una mayor ligereza y mayor rigidez por lo que la dirección del automóvil es más estable y consitente."
+  utter_respuesta_a_pregunta10:
+    - text: "de contado, la ventaja de este método de pago es que solo se realiza un solo pago por lo que no se cobran intereses,
+lo cuál hace que el precio del vehículo baje, a credito, deberás pagar un enganche y después mensualidades hasta realizar
+el pago total del vehículo en el plazo de tiempo elegido."
+  utter_respuesta_a_pregunta11:
+    - text: "de cuero, es un material usado generalmente en autos de alta gama pero lo manejamos en varios de nuestros vehículos
+de otras gamas; tapiceria foamizada, son tapicerias de tela que buscan combinar una imagen atractiva y un asiento efectivo;
+tapicería de alcántara, es un tejido que tiene un tacto y textura muy parecida al terciopelo o gamuza.
+"
+  utter_respuesta_a_pregunta12:
+    - text: "las bolsas delanteras están diseñadas para proteger al conductor y al pasajero del asiento delantero, las bolsas
+de aire laterales protegen a aquellos que estén sentados en el lado accidentado, suelen estar instaladas en el asiento; su
+propósito principal es evitar que el cuerpo de una persona se estrelle contra la puerta y reducir las lesiones en el abdomen
+y áreas pelvicas. Las bolsas de aire de rodillas distrubuyen la fuerza del impacto para evitar lesiones de rodilla,
+rotura de hueso de la pierna o hematomas, también ayudan a mantener a la persona en su posición durante una colisión frontal.
+La bolsa de aire trasera, protege a los pasageros del asiento trasero evitando que se estrellen contra la ventana trasera y la central
+trasera evita que los pasajeros choquen entre sí. La bolsa de aire para cinturón de seguridad distribuye la fuerza del impacto
+sobre una parte más grande del cuerpo de la perosa y reduce el riesgo de lesiones debido a cinturones de seguridad.
+"
+  utter_respuesta_a_pregunta13:
+    - text: "si, puede conectar su dispositivo por bluetooh para contestar llamadas, reproducir contenido multimedia o musica."
+  utter_respuesta_a_pregunta14:
+    - text: "en los vidrios delanteros es de 30% mientras que en los traseros es de un 70%"
+  utter_respuesta_a_pregunta15:
+    - text: "en cualquiera de las consecionarias que den servicio al automovíl o dependiendo de la marca, puedes checar su catalogo
+especifico para buscar una pieza con el número de serie exacto de la pieza para tu vehículo. La pieza puede no ser adecuada
+para tu vehículo pese a que sea del mismo modelo, por eso recomendamos ampliamente buscar la pieza con el número de serie exacto."
+  utter_respuesta_a_pregunta16:
+    - text: "en el manual del automovíl que se te entregará junto con los papeles y la poliza del auto, encontraras un listado con las
+piezas exactas de tu vehículo. Algunas piezas pueden no estar listadas en ese documento, sin embargo la consecionaria guarda
+un registro exacto de piezas para su solicitud en caso de ser requeridas."
+  utter_respuesta_a_pregunta17:
+    - text: "Debes ponerte en contacto con tu aseguradora para que te ayuden a recuperar tu segundo juego de llaves y cubrir el costo
+de un nuevo juego de llaves. Si tu llave es sencilla, un duplicado podría resultar con un muy bajo costo, sin embargo, si tu llave es a control
+remoto, el costo de una nueva podría ser muy elevado. Si piensas acudir con un cerrajero, asegurate que sea uno certificado
+o agencia de la marca. Ten a la mano todos los papeles y especificaciones de tu vehículo, esto incluye factura original, especificaciones del auto y póliza de seguro, además del número de identificación
+único del carro o número de identificación vehicular(niv)."
+  utter_respuesta_a_pregunta18:
+    - text: "Para recuperar tu vehículo del corralón, debes realizar el pago de multa, arrastre y derechos de piso correspondientes.
+Este monto puede variar deacuerdo al motivo por el cual se remite el vehículo al depósito, más el arrastre. "
+  utter_respuesta_a_pregunta19:
+    - text: "se le otorgan 3 juegos de llaves para su vehículo, en caso de ser de control remoto, las 3 llaves poseen el mismo tipo de
+chip para su vehículo, sin embargo si este sufre una alteración es posible que ninguna de las llaves funcione y tenga que sacar una nueva
+con un costo mayor por el remplazo del receptor en la puerta del vehiculo.
+"
+  utter_respuesta_a_pregunta20:
+    - text: "si, contamos con pagos por mensualidad desde $4,999 + 0% por apertura, 18 meses sin intereses desde un 35% de enganche con
+0% de tasa de interés y 3.5% de comisión por apertura, con plazo de 18 meses y por financiamiento con mensualidades desde $3,999
+hasta 18 meses sin intereses + un año de seguro gratis(Consulte los términos y condiciones)."
+  utter_respuesta_a_pregunta21:
+    - text: "si es posible, primero se realiza una evaluación de tu auto para deducir una parte del costo del vehículo nuevo que desees adqueirir
+dependieno del estado de tu vehículo actual, kilometraje y rendimiento.
+"
+  utter_respuesta_a_pregunta22:
+    - text: "si, para esto es necesario agendar una cita en la concesionaria para que uno de nuestros gerentes de ventas le muestre el
+historial del vehículo y usted mismo úede comprobar el número de identificación del vehículo. "
+  utter_respuesta_a_pregunta23:
+    - text: "la marca del fabricante, solo bajo esa certificación aceptamos la adquisición de vehículos seminuevos."
+  utter_respuesta_a_pregunta24:
+    - text: "si, en la compra estamos regalando un neumático adicional de repuesto y un kit adicional de reparaciones para carretera, en
+caso de adquirir un kit especifico de audio, también se incluyen bocinas adicionales si las quiere sin costo alguno.
+"
+  utter_respuesta_a_pregunta25:
+    - text: "si, pero tome en cuenta que si eso ocurre mientras esté vigente la garantía, cualquier modificación hecha en otro taller no aprobado
+o que rompa lo permitido por la ley, o sea considerado peligroso, anulara la garantía de su vehículo. Una vez finalizada esta
+puede modificar su vehículo de la manera que guste contando solo con la cobetura de su seguro.
+"
+  utter_respuesta_a_pregunta26:
+    - text: "desafortunadamente no contamos con ese servicio, pero si contamos con un servicio de grúas para transporte de vehículos en caso de
+accidentes o transporte a domicilio en nuestros vehículos de la gama más alta.
+"
+  utter_respuesta_a_pregunta27:
+    - text: "al salir de la agencia el vehículo se deprecia en promedio un 27% y un 10% cada año que pasa dependiendo de la marca, modelo y condiciones
+en las que se encuentre el vehículo. En promedio un auto nuevo perdera el 60% de su valor a lo largo de los 4 primeros años de uso."
+  utter_respuesta_a_pregunta28:
+    - text: "buscamos que los vehículos que referimos tengan una clasificación de seguridad de 4 a 5
+estrellas de NHTSA, esto con la finalidad de ayudar a los consumidores a tomar decisiones
+inteligentes sobre la seguridad al momento de comprar un vehículo.
+"
+  utter_respuesta_a_pregunta29:
+    - text: "desafortunadamente no, los autos son pintados desde que se fabrica la carroceria para
+después ser ensamblados, por lo que solo vendemos los vehículos en los colores que son
+anunciados.
+"
+  utter_respuesta_a_pregunta30:
+    - text: "reportar el robo ante las autoridades, comunicate con el 911 y proporciona el número de serie y
+placas del coche(en caso de robo total). Presenta una denuncia ante el ministerio público
+para abrir una carpeta de investigación; anota el folio para dar seguimiento al caso y contactar con
+tu aseguradora.
+"
+
+
+
+
+
+
+
+
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+actions:
+    - utter_saludos
+    - utter_generalon_Tipo
+    - utter_generalon_TipoA_C
+    - utter_generalon_TipoA_A
+    - utter_generalon_TipoB
+    - utter_generalon_TipoC
+    - utter_generalon_TipoD
+    - utter_generalon_TipoE_A
+    - utter_generalon_TipoE_C
+    - utter_responder_negar_catalago
+    - utter_responder_denada
+    - action_catalago
+    - action_catalago_dos
+    - utter_respuesta_a_pregunta1
+    - utter_respuesta_a_pregunta2
+    - utter_respuesta_a_pregunta3
+    - utter_respuesta_a_pregunta4
+    - utter_respuesta_a_pregunta5
+    - utter_respuesta_a_pregunta6
+    - utter_respuesta_a_pregunta7
+    - utter_respuesta_a_pregunta8
+    - utter_respuesta_a_pregunta9
+    - utter_respuesta_a_pregunta10
+    - utter_respuesta_a_pregunta11
+    - utter_respuesta_a_pregunta12
+    - utter_respuesta_a_pregunta13
+    - utter_respuesta_a_pregunta14
+    - utter_respuesta_a_pregunta15
+    - utter_respuesta_a_pregunta16
+    - utter_respuesta_a_pregunta17
+    - utter_respuesta_a_pregunta18
+    - utter_respuesta_a_pregunta19
+    - utter_respuesta_a_pregunta20
+    - utter_respuesta_a_pregunta21
+    - utter_respuesta_a_pregunta22
+    - utter_respuesta_a_pregunta23
+    - utter_respuesta_a_pregunta24
+    - utter_respuesta_a_pregunta25
+    - utter_respuesta_a_pregunta26
+    - utter_respuesta_a_pregunta27
+    - utter_respuesta_a_pregunta28
+    - utter_respuesta_a_pregunta29
+    - utter_respuesta_a_pregunta30
+
+
+slots:
+  tipo_de_Auto:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: tipo_de_Auto
+
+
+  tipo_de_camioneta:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: tipo_de_camioneta
+
+  GAMA:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: GAMA
+  tipo_de_uso:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: tipo_de_uso

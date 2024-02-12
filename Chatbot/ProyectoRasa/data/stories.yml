@@ -1,0 +1,237 @@
+version: "3.1"
+
+stories:
+
+- story: general_autos
+  steps:
+  - intent: saludos
+  - action: utter_saludos
+  - intent: necesidad_general
+  - action: utter_generalon_Tipo
+  - intent: Auto_A
+    entities:
+      - tipo_de_Auto: Auto
+      - tipo_de_Auto: coche
+      - tipo_de_Auto: coches
+  - action: utter_generalon_TipoA_A
+  - intent: uso
+    entities:
+      - tipo_de_uso : carretera
+      - tipo_de_uso : para la calle
+      - tipo_de_uso : ciudad
+      - tipo_de_uso : motaña
+      - tipo_de_uso : para vijar un monton
+      - tipo_de_uso : pa escalar
+      - tipo_de_uso : uso rudisimo
+  - action: utter_generalon_TipoB
+  - intent: presupuesto
+    entities:
+      - GAMA: gama alta
+      - GAMA: gama baja
+      - GAMA: gama media
+  - action: utter_generalon_TipoC
+  - intent: rendimientoGASOLINA
+  - action: utter_generalon_TipoD
+  - intent: Marca
+  - action: utter_generalon_TipoE_A
+  - intent: afirmar
+  - action: action_catalago
+  - intent: agradecimiento
+  - action: utter_responder_denada
+
+- story: general_camionetas
+  steps:
+  - intent: saludos
+  - action: utter_saludos
+  - intent: necesidad_general
+  - action: utter_generalon_Tipo
+  - intent: Auto_Camionet
+    entities:
+      - tipo_de_camioneta : camioneta
+      - tipo_de_camioneta:
+      - tipo_de_camioneta:
+      - tipo_de_camioneta:
+      - tipo_de_camioneta:
+      - tipo_de_camioneta:
+      - tipo_de_camioneta:
+      - tipo_de_camioneta:
+  - action: utter_generalon_TipoA_C
+  - intent: uso
+    entities:
+      - tipo_de_uso : carretera
+      - tipo_de_uso : para la calle
+      - tipo_de_uso : ciudad
+      - tipo_de_uso : motaña
+      - tipo_de_uso : para vijar un monton
+      - tipo_de_uso : pa escalar
+      - tipo_de_uso : uso rudisimo
+  - action: utter_generalon_TipoB
+  - intent: presupuesto
+    entities:
+      - GAMA: gama alta
+      - GAMA: gama baja
+      - GAMA: gama media
+  - action: utter_generalon_TipoC
+  - intent: rendimientoGASOLINA
+  - action: utter_generalon_TipoD
+  - intent: Marca
+  - action: utter_generalon_TipoE_C
+  - intent: afirmar
+  - action: action_catalago_dos
+  - intent: agradecimiento
+  - action: utter_responder_denada
+- story: negarcatalago
+  steps:
+  - action: utter_generalon_TipoE_C
+  - intent: negar
+  - action: utter_responder_negar_catalago
+
+- story: respuestas_E1
+  steps:
+  - intent: preguntas_1
+  - action: utter_respuesta_a_pregunta1
+
+- story: respuestas_E2
+  steps:
+  - intent: preguntas_2
+  - action: utter_respuesta_a_pregunta2
+
+- story: respuestas_E3
+  steps:
+  - intent: preguntas_3
+  - action: utter_respuesta_a_pregunta3
+
+- story: respuestas_E4
+  steps:
+  - intent: preguntas_4
+  - action: utter_respuesta_a_pregunta4
+
+- story: respuestas_E5
+  steps:
+  - intent: preguntas_5
+  - action: utter_respuesta_a_pregunta5
+
+- story: respuestas_E6
+  steps:
+  - intent: preguntas_6
+  - action: utter_respuesta_a_pregunta6
+
+- story: respuestas_E7
+  steps:
+  - intent: preguntas_7
+  - action: utter_respuesta_a_pregunta7
+
+- story: respuestas_E8
+  steps:
+  - intent: preguntas_8
+  - action: utter_respuesta_a_pregunta8
+
+- story: respuestas_E9
+  steps:
+  - intent: preguntas_9
+  - action: utter_respuesta_a_pregunta9
+
+- story: respuestas_E10
+  steps:
+  - intent: preguntas_10
+  - action: utter_respuesta_a_pregunta10
+
+- story: respuestas_E11
+  steps:
+  - intent: preguntas_11
+  - action: utter_respuesta_a_pregunta11
+
+- story: respuestas_E12
+  steps:
+  - intent: preguntas_12
+  - action: utter_respuesta_a_pregunta12
+
+- story: respuestas_E13
+  steps:
+  - intent: preguntas_13
+  - action: utter_respuesta_a_pregunta13
+
+- story: respuestas_E14
+  steps:
+  - intent: preguntas_14
+  - action: utter_respuesta_a_pregunta14
+
+- story: respuestas_E15
+  steps:
+  - intent: preguntas_15
+  - action: utter_respuesta_a_pregunta15
+
+- story: respuestas_E16
+  steps:
+  - intent: preguntas_16
+  - action: utter_respuesta_a_pregunta16
+
+- story: respuestas_E17
+  steps:
+  - intent: preguntas_17
+  - action: utter_respuesta_a_pregunta17
+
+- story: respuestas_E18
+  steps:
+  - intent: preguntas_18
+  - action: utter_respuesta_a_pregunta18
+
+- story: respuestas_E19
+  steps:
+  - intent: preguntas_19
+  - action: utter_respuesta_a_pregunta19
+
+- story: respuestas_E20
+  steps:
+  - intent: preguntas_20
+  - action: utter_respuesta_a_pregunta20
+
+- story: respuestas_E21
+  steps:
+  - intent: preguntas_21
+  - action: utter_respuesta_a_pregunta21
+
+- story: respuestas_E22
+  steps:
+  - intent: preguntas_22
+  - action: utter_respuesta_a_pregunta22
+
+- story: respuestas_E23
+  steps:
+  - intent: preguntas_23
+  - action: utter_respuesta_a_pregunta23
+
+- story: respuestas_E24
+  steps:
+  - intent: preguntas_24
+  - action: utter_respuesta_a_pregunta24
+
+- story: respuestas_E25
+  steps:
+  - intent: preguntas_25
+  - action: utter_respuesta_a_pregunta25
+- story: respuestas_E26
+  steps:
+  - intent: preguntas_26
+  - action: utter_respuesta_a_pregunta26
+
+- story: respuestas_E27
+  steps:
+  - intent: preguntas_27
+  - action: utter_respuesta_a_pregunta27
+
+- story: respuestas_E28
+  steps:
+  - intent: preguntas_28
+  - action: utter_respuesta_a_pregunta28
+
+- story: respuestas_E29
+  steps:
+  - intent: preguntas_29
+  - action: utter_respuesta_a_pregunta29
+
+
+- story: respuestas_E30
+  steps:
+  - intent: preguntas_30
+  - action: utter_respuesta_a_pregunta30

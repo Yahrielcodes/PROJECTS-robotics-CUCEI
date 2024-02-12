@@ -1,0 +1,352 @@
+version: "3.1"
+
+nlu:
+
+- intent: saludos
+  examples: |
+    - hey
+    - hola
+    - buenos días
+    - buenos dias
+    - buenas tardes
+    - buenas noches
+    - hey,disculpen
+    - como estas
+    - keonda wey
+    - aloo
+- intent: despedidas
+  examples: |
+    - adios
+    - chao
+    - te cuidas
+    - te veo luego
+    - bye
+    - goodbye
+    - que tengas un buen dia
+    - bye bye
+- intent: Auto_Camionet
+  examples: |
+    - las [camioneta](tipo_de_camioneta)
+    - una [camioneta](tipo_de_camioneta)
+    - [camioneta](tipo_de_camioneta)
+    - [camioneton](tipo_de_camioneta)
+    - [trocas](tipo_de_camioneta)
+    - las [trocas](tipo_de_camioneta)
+    - las [placosonas](tipo_de_camioneta)
+    - [trocon](tipo_de_camioneta)
+    - [una grande](tipo_de_camioneta)
+    - [una grandota](tipo_de_camioneta)
+    - [placosona](tipo_de_camioneta)
+    - [placosonas](tipo_de_camioneta)
+- intent: Auto_A
+  examples: |
+    - [Carro](tipo_de_Auto)
+    - los [Carros](tipo_de_Auto)
+    - los [autos](tipo_de_Auto)
+    - los [coches](tipo_de_Auto)
+    - un [Carro](tipo_de_Auto)
+    - un [Coche](tipo_de_Auto)
+    - [Coches](tipo_de_Auto)
+    - [Coche](tipo_de_Auto)
+    - [Autos](tipo_de_Auto)
+    - [Auto](tipo_de_Auto)
+- intent: uso
+  examples: |
+    - [carretera](tipo_de_uso)
+    - [para la calle](tipo_de_uso)
+    - [ciudad](tipo_de_uso)
+    - [montaña](tipo_de_uso)
+    - [montana](tipo_de_uso)
+    - [para viajar un monton](tipo_de_uso)
+    - [pa escalar](tipo_de_uso)
+    - [uso rudisimo](tipo_de_uso)
+    - [le dare con todo a la camioneta](tipo_de_uso)
+- intent: presupuesto
+  examples: |
+    - [auto caro](GAMA)
+    - [traigo mucho varo](GAMA)
+    - [gama alta](GAMA)
+    - uno de [gama alta](GAMA)
+    - ando corto de varo solo puedo de [gama baja](GAMA)
+    - me alcanza [gama baja](GAMA)
+    - solo puedo de [gama baja](GAMA)
+    - [No tengo varo](GAMA)
+    - [gama baja](GAMA)
+    - [gama media](GAMA)
+    - pues uno masomenos de [gama media](GAMA)
+    - [No tan caro ni tan barato](GAMA)
+- intent: rendimientoGASOLINA
+  examples: |
+    - no tanto
+    - me vale
+    - no me importa
+    - si es importante
+    - para mi es fundamental
+    - me da igual
+    - nel pastel
+    - simon hay que ahorrar feria
+
+- intent: Marca
+  examples: |
+    - Nissan
+    - nissan
+    - Chevrolet
+    - chevrolet
+    - Toyota
+    - Ferrari
+    - Acura
+    - Honda
+    - BMW
+    - renault
+    - Honda
+    - Ford
+
+- intent: afirmar
+  examples: |
+    - si
+    - en efecto
+    - Si
+    - por su puesto
+    - claro que si
+    - correcto
+    - es verdad
+    - asi es
+
+- intent: negar
+  examples: |
+    - no
+    - nel
+    - nunca
+    - ni loco
+    - no me interesa
+    - de ninguna manera
+    - no realmente
+    - jamas
+- intent: recomendaciones
+  examples: |
+    - necesito
+    - ayuda
+    - ocupo
+    - quiero
+    - deseo
+    - desearia
+    - me gustaria
+    - quisiera
+
+- intent: agradecimiento
+  examples: |
+    - Muchas gracias
+    - fue de mucha ayuda
+    - gracias
+    - enserio gracias
+    - thanks
+    - thx
+    - thx u
+    - thank you
+
+- intent: necesidad_general
+  examples: |
+    - general
+    - quiero informacion general
+    - me interesa saber de todo un poco
+    - es bueno saber un poco de todo
+    - me seria de utilidad saber distintos aspectos
+
+- intent: necesidad_especifica
+  examples: |
+    - tengo una duda especifico
+    - algo en especifico
+    - especifico
+    - algo en concreto
+
+#preguntas_especificas
+
+- intent: preguntas_1
+  examples: |
+    - ¿como me protege el auto en un choque?
+    - tiene airbags?
+    - tiene bolsas de aire?
+    - ¿tiene bolsas de aire?
+- intent: preguntas_2
+  examples: |
+    - cada cuanto tengo que venir al servicio del auto?
+    - cuantos servicios manejan?
+    - en cuantos kilometros debo traerlo a servicio?
+    - cuando tengo que traerlo a servicio?
+
+- intent: preguntas_3
+  examples: |
+    - cada cuanto tiempo debo cambiarle el aceite?
+    - en cuanto tiempo debo cambiar el aceite?
+    - cuando me recomiendan cambiar el aceite?
+    - cada cuantos kilómetros debo cambiar el aceite?
+- intent: preguntas_4
+  examples: |
+    - que cubre el seguro?
+    - cual es la cobertura del seguro?
+    - manejan planes de seguro?
+    - en que consiste el seguro?
+
+- intent: preguntas_5
+  examples: |
+    - puedo apagar el control de tracción del vehículo?
+    - puedo desactivar el control de tracción del vehículo?
+    - el control de tracción puede ser desactivado?
+    - el auto tiene control de tracción actibable y desactibable?
+- intent: preguntas_6
+  examples: |
+    - cuantos kilometros rinde por litro el vehiculo?
+    - cuanto rinde por litro?
+    - es normal que rinda menos mi auto?
+    - por litro cuanto rinde?
+
+- intent: preguntas_7
+  examples: |
+    - como puedo perder la garantia del auto?
+    - como pierdo la garantia del auto?
+    - como se puede perder la garantia del auto?
+    - puedo perder la garantia del auto?
+- intent: preguntas_8
+  examples: |
+    - para que sirve el aleron?
+    - tiene alguna función el aleron?
+    - el aleron sirve para algo o solo es estetico?
+    - que hace el aleron?
+
+- intent: preguntas_9
+  examples: |
+    - por que los rines son de fibra de carbono?
+    - cual es el proposito de los rines de fibra de carbono?
+    - para que sirven los rines de fibra de carbono?
+    - en que se diferencian los rines de fibra de acarbono a los de aluminio?
+- intent: preguntas_10
+  examples: |
+     - de que maneras puedo pagar mi vehículo?
+     - de que forma puedo comprar el auto?
+     - que formatos de pago tienen?
+     - que formas de pago manejan?
+
+- intent: preguntas_11
+  examples: |
+     - que tipos de tapicería puede tener el vehículo?
+     - que tapicería tienen los carros?
+     - que material de tapicería manejan?
+     - tipos de tapicería?
+
+- intent: preguntas_12
+  examples: |
+     - que tipo de bolsas de aire existen en los vehículos?
+     - cuales son las bolsas de aire que manejan?
+     - que bolsas de aire pueden tener los vehículos?
+     - para que es cada bolsa de aire?
+- intent: preguntas_13
+  examples: |
+    - el estereo funciona con bluetooth?
+    - el estereo puede ser inalambrico?
+    - el estereo tiene para blutu?
+    - el estereo puede reproducir el contenido de mi telefono?
+- intent: preguntas_14
+  examples: |
+     - con cuanto porcentaje puedo polarizar los vidrios?
+     - a que porcentaje puedo polarizar el vehículo?
+     - con cuanto puedo polarizar los vidrios?
+     - a que porcentaje se pueden polarizar los vidrios?
+
+- intent: preguntas_15
+  examples: |
+     - donde puedo comprar autopartes originales de mi vehiculo?
+     - donde puedo adquirir autopartes originales de mi vehículo?
+     - donde compro partes originales?
+     - donde venden autopartes originales?
+- intent: preguntas_16
+  examples: |
+     - donde encuentro el número de serie de una pieza para mi vehículo?
+     - donde esta el número de serie de las piezas de mi auto?
+     - en donde esta el número de serie de las piezas?
+     - como veo cual es el número de serie de una pieza?
+- intent: preguntas_17
+  examples: |
+     - que pasa si perdí la llave de mi vehículo?
+     - perdí las llaves, que puedo hacer?
+     - me pueden ayudar si perdí las llaves del auto?
+     - que hago si no encuentro las llaves?
+- intent: preguntas_18
+  examples: |
+     - como recupero mi auto del corralon?
+     - se llevaron mi auto, como lo saco del corralon?
+     - que tengo que hacer para sacar mi carro del corralon?
+     - como saco mi auto del corralon de manera legal?
+- intent: preguntas_19
+  examples: |
+     - cuantos juegos de llaves me dan al comprar el vehículo?
+     - cuantas llaves me dan al comprar el carro?
+     - me dan varios juegos de llaves al comprarlo?
+     - cuantos juegos de llaves dan?
+- intent: preguntas_20
+  examples: |
+     - tienen alguna promocion?
+     - hay alguna promoción?
+     - tienen promociones?
+     - hay promociones?
+- intent: preguntas_21
+  examples: |
+     - pueden tomar mi auto a cuenta?
+     - toman autos a cuenta?
+     - pueden adquirir mi auto a cuenta?
+     - puedo pagar también con mi carro?
+- intent: preguntas_22
+  examples: |
+     - puedo solicitar el historial del vehículo?
+     - puedo ver el historial del vehículo?
+     - me pueden mostrar el historial del vehículo?
+     - se puede ver el historial del carro?
+- intent: preguntas_23
+  examples: |
+     - quién certificó el vehículo?
+     - quién certifica los vehículos seminuevos?
+     - quién otogó la certificación al carro?
+     - quién les certifica los autos seminuevos?
+- intent: preguntas_24
+  examples: |
+     - en la compra del vehículo se incluye algún equipo nuevo?
+     - incluye algún equipo nuevo ?
+     - dan algo con la compra?
+     - regalan algo con la compra?
+- intent: preguntas_25
+  examples: |
+     - puedo modificar mi vehículo?
+     - puedo tunear mi carro?
+     - puedo tunear el auto?
+     - puedo modificar el vehículo?
+- intent: preguntas_26
+  examples: |
+     - tienen servicio de transporte de vehículos a otro país?
+     - transportan autos a otros paises?
+     - pueden enviar mi vehículo a otro país?
+     - tienen algún servicio de exportación?
+
+- intent: preguntas_27
+  examples: |
+     - cuanto se deprecia el auto al salir de la agencia?
+     - que tanto se de deprecia el auto al salir?
+     - se deprecia el auto al salir?
+     - se deprecia mucho el auto al salir?
+- intent: preguntas_28
+  examples: |
+     - cuantas entrellas de seguridad tienen los vehículos que venden?
+     - con cuantas de estrellas de seguridad cuentan los autos?
+     - los vehículos tienen estrellas de seguridad?
+     - fueron evaluados con estrellas de seguridad?
+- intent: preguntas_29
+  examples: |
+     - puedo solicitar un color especifico que no sea de serie?
+     - pueden pintar el carro de otro color?
+     - pueden pintarlo de otros colores?
+     - pueden entregarmelo con otro colo?
+
+- intent: preguntas_30
+  examples: |
+     - que puedo hacer en caso de robo?
+     - que hago en caso de robo?
+     - que pasa en caso de robo?
+     - que hago si me roban el carro?
